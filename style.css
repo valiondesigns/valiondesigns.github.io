@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0A0A0A;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav img {
+    width: 120px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #D4AF37;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+}
+
+.hero span {
+    color: #D4AF37;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 14px 30px;
+    background: linear-gradient(45deg, #D4AF37, #f5d76e);
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* SECTION */
+.section {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    width: 280px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.02);
+}
+
+/* SUBSCRIBE */
+.subscribe {
+    padding: 80px;
+    text-align: center;
+}
+
+.subscribe form {
+    margin-top: 20px;
+}
+
+.subscribe input {
+    padding: 12px;
+    width: 250px;
+    border-radius: 25px;
+    border: none;
+    margin-right: 10px;
+}
+
+.subscribe button {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    background: #D4AF37;
+}
+
+/* CONTACT FORM */
+form input, form textarea {
+    width: 80%;
+    padding: 12px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+textarea {
+    height: 120px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #000;
+}
+
+/* SCROLL ANIMATION */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}

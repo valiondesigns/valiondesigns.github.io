@@ -1,10 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <title>Valion Deigns</title>
+    <title>Valion Designs</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>Welcome to Valion Designs</h1>
-   <p>Creative. Digital. Innovative.</p>
+
+<nav>
+    <img src="logo.png">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <video autoplay muted loop>
+        <source src="hero.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-content">
+        <h1>We Build <span>Powerful Digital Brands</span></h1>
+        <p>Strategy. Design. Growth.</p>
+        <a href="services.html"><button class="btn">Get Started</button></a>
+    </div>
+</section>
+
+<section class="section hidden">
+    <h2>Our Expertise</h2>
+    <div class="cards">
+        <div class="card">Web Design</div>
+        <div class="card">Brand Identity</div>
+        <div class="card">Marketing Strategy</div>
+    </div>
+</section>
+
+<section class="subscribe hidden">
+    <h2>Join the Valion Network</h2>
+    <form action="https://formspree.io/f/yourID" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Valion Designs</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
