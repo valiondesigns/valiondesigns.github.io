@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Valion Dsigns — futuristic design agency: graphics, UI/UX, social media content. Scroll‑stopping & ethereal.">
+    <title>Valion Dsigns | Futuristic Design Agency</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="noise-bg"></div>
+    
+    <!-- NAVIGATION (shared across all pages) -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>VALION DSIGNS</h1>
+                <span>✦ beyond dimensions ✦</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#context">Context</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- Include each section -->
+        <div id="home-container"></div>
+        <div id="about-container"></div>
+        <div id="context-container"></div>
+        <div id="services-container"></div>
+        <div id="work-container"></div>
+        <div id="contact-container"></div>
+        <div id="subscribe-container"></div>
+    </main>
+    
+    <div id="footer-container"></div>
+    
+    <!-- jQuery (only needed for load() function) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        // Load all HTML sections dynamically
+        // This keeps your code organized and easy to edit
+        $(function() {
+            $('#home-container').load('hero.html');
+            $('#about-container').load('about.html');
+            $('#context-container').load('context.html');
+            $('#services-container').load('services.html');
+            $('#work-container').load('work.html');
+            $('#contact-container').load('contact.html');
+            $('#subscribe-container').load('subscribe.html');
+            $('#footer-container').load('footer.html');
+        });
+    </script>
+    
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
