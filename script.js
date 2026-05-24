@@ -66,7 +66,7 @@ if (sendContactBtn) {
 // 1. Create a Google Sheet with columns: Name, Email, Timestamp
 // 2. Create a Google Apps Script (script.google.com)
 // 3. Deploy as Web App and copy the URL here
-const SCRIPT_URL = "https:https://script.google.com/macros/s/AKfycbxAfq91wFolS-ASpIxpXf0W5scSz2dPXU0q4M9A0jD_DVA68NxmH7pOSCXp-QNDbVYqKQ/exec"; // <-- PASTE YOUR URL HERE
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzXAhUNz4g_7aDuUxoxLf84kQyRhMy6DUz2Gdnrryu131J8hN-VLHdtOTI9yuNcccMznA/exec"; // <-- PASTE YOUR URL HERE
 
 const subscribeForm = document.getElementById('subscribeForm');
 const formStatusDiv = document.getElementById('formStatus');
